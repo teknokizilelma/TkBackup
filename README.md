@@ -4,4 +4,4 @@ Programı kullanmak için Tool.zip dosyasını indirip TestAdb_05032020.exe dosy
 
 Source kodlarını kurcalayıp katkıda bulunabilirsiniz :-)
 
-Admin :Yakup CONTARLI
+Yakup CONTARLI
