@@ -48,7 +48,30 @@ namespace TestAdb_05032020
 
         private void button5_Click(object sender, EventArgs e)
         {
+            string strCmdText;
+            strCmdText = "/C yedekAlUser.bat";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string strCmdText;
+            strCmdText = "/C yedekAlEski.bat";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string strCmdText;
+            strCmdText = "/C yedekAlUserEski.bat";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string strCmdText;
+            strCmdText = "/C yedekYukleEski.bat";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
         }
     }
 }
