@@ -46,7 +46,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 71);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Yedek Al (Tam) Android 5.0\'dan yüksek";
+            this.button1.Text = "Yedek Al (Tam) Android 5.0\'den yüksek";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -57,7 +57,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 70);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Yedeği Yükle Android 5.0\'dan yüksek";
+            this.button2.Text = "Yedeği Yükle Android 5.0\'den yüksek";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -87,7 +87,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 71);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Yedek Al (Kullanıcı) Android 5.0\'dan yüksek";
+            this.button5.Text = "Yedek Al (Kullanıcı) Android 5.0\'den yüksek";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
