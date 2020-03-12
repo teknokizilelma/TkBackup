@@ -19,58 +19,90 @@ namespace TestAdb_05032020
         public Form1()
         {
             InitializeComponent();
-            label1.Text = "İş bu uygulama test aşamasında olup veri kayıplarından uygulama yapımcısı sorumlu değildir.";
+            label1.Text = "İş bu uygulama test aşamasında olup veri kayıplarından uygulama yapımcısı sorumlu değildir. \n Bazı telefon marka üreticileri tarafından Rehber kişileri,SMS Mesajların yedeklenmesi güvenlik gerekçesiyle engellenir.\n WhatsApp uygulama ve yedekleri güvenlik gerekçesiyle Facebook Inc. tarafından engellenmektedir.";
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+          
             YedekAlYeni YedekAlY = new YedekAlYeni();
-            YedekAlY.Show();
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/C yedekAl.bat";
+            process.StartInfo = startInfo;
+            process.Start();
 
-            Process[] pname = Process.GetProcessesByName("adb");
-            for (; pname.Length > 0;)
+            if (process.Start() == true)
             {
-                pname = Process.GetProcessesByName("adb");
-                for (; pname.Length == 0;)
+                YedekAlY.Show();
+            }
+
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.ProcessName == "adb")
                 {
-                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-                    YedekAlY.Close();
-                    pname = Process.GetProcessesByName("adb");
+
+                    
                 }
+                else
+                {
+                    YedekAlY.Close();
+                    break;
+                }
+                
+
             }
         }
+
+
+       
+
         private void button2_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+           
+            
             YedekYukleYeni YedekYukleY = new YedekYukleYeni();
-            YedekYukleY.Show();
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/C yedekYukle.bat";
+            process.StartInfo = startInfo;
+            process.Start();
 
-            Process[] pname = Process.GetProcessesByName("adb");
-            for (; pname.Length > 0;)
+            if (process.Start() == true)
             {
-                pname = Process.GetProcessesByName("adb");
-                for (; pname.Length == 0;)
-                {
-                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-                    YedekYukleY.Close();
-                    pname = Process.GetProcessesByName("adb");
-                }
+                YedekYukleY.Show();
             }
+
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.ProcessName == "adb")
+                {
+
+
+                }
+                else
+                {
+                    YedekYukleY.Close();
+                    break;
+                }
+
+
+            }
+
+
+
         }
 
 
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+         
             Yardım yrd = new Yardım();
             yrd.Show();
 
@@ -78,94 +110,147 @@ namespace TestAdb_05032020
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+            
+            
             YedekAlUserYeni YedekAlUY = new YedekAlUserYeni();
-            YedekAlUY.Show();
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/C yedekAlUser.bat";
+            process.StartInfo = startInfo;
+            process.Start();
 
-            Process[] pname = Process.GetProcessesByName("adb");
-            for (; pname.Length > 0;)
+            if (process.Start() == true)
             {
-                pname = Process.GetProcessesByName("adb");
-                for (; pname.Length == 0;)
+                YedekAlUY.Show();
+            }
+
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.ProcessName == "adb")
                 {
-                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-                    YedekAlUY.Close();
-                    pname = Process.GetProcessesByName("adb");
+
+
                 }
+                else
+                {
+                    YedekAlUY.Close();
+                    break;
+                }
+
+
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+           
             YedekAlEski YedekAlE = new YedekAlEski();
-            YedekAlE.Show();
 
-            Process[] pname = Process.GetProcessesByName("adb");
-            for (; pname.Length > 0;)
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/C yedekAlEski.bat";
+            process.StartInfo = startInfo;
+            process.Start();
+
+            if (process.Start() == true)
             {
-                
-                pname = Process.GetProcessesByName("adb");
-                for (; pname.Length == 0;)
+                YedekAlE.Show();
+            }
+
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.ProcessName == "adb")
                 {
-                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-                    YedekAlE.Close();
-                    pname = Process.GetProcessesByName("adb");
+
+
                 }
+                else
+                {
+                    YedekAlE.Close();
+                    break;
+                }
+
+
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+           
             YedekAlUserEski YedekAlUE = new YedekAlUserEski();
-            YedekAlUE.Show();
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/C yedekAlUserEski.bat";
+            process.StartInfo = startInfo;
+            process.Start();
 
-            Process[] pname = Process.GetProcessesByName("adb");
-            for (; pname.Length > 0;)
+            if (process.Start() == true)
             {
-                pname = Process.GetProcessesByName("adb");
-                for (; pname.Length == 0;)
-                {
-                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-                    YedekAlUE.Close();
-                    pname = Process.GetProcessesByName("adb");
-                }
+                YedekAlUE.Show();
             }
+
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.ProcessName == "adb")
+                {
+
+
+                }
+                else
+                {
+                    YedekAlUE.Close();
+                    break;
+                }
+
+
+            }
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
             YedekYukleEski YedekYukleE = new YedekYukleEski();
             YedekYukleE.Show();
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = @"/C yedekYukleEski.bat";
+            process.StartInfo = startInfo;
+            process.Start();
 
-            Process[] pname = Process.GetProcessesByName("adb");
-            for (; pname.Length > 0;)
+            if (process.Start() == true)
             {
-                pname = Process.GetProcessesByName("adb");
-                for (; pname.Length == 0;)
-                {
-                    System.Diagnostics.Process.Start("CMD.exe", strCmdText);
-                    YedekYukleE.Close();
-                    pname = Process.GetProcessesByName("adb");
-                }
+                YedekYukleE.Show();
             }
+
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.ProcessName == "adb")
+                {
+
+
+                }
+                else
+                {
+                    YedekYukleE.Close();
+                    break;
+                }
+
+
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string strCmdText;
-            strCmdText = "/C adbKill.bat";
-            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+           
         }
     }
 }
