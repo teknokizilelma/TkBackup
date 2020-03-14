@@ -1,6 +1,6 @@
 ﻿namespace TestAdb_05032020
 {
-    partial class YedekAlEski
+    partial class Loading
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YedekAlEski));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loading));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -36,22 +36,22 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(52, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(43, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(429, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(423, 305);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // YedekAlEski
+            // Loading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(569, 377);
+            this.ClientSize = new System.Drawing.Size(507, 336);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "YedekAlEski";
-            this.Text = "YedekAlEski";
-            this.Load += new System.EventHandler(this.YedekAlEski_Load);
+            this.Name = "Loading";
+            this.Text = "İşlemleriniz yürütülüyor.";
+            this.Load += new System.EventHandler(this.YedekAlYeni_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

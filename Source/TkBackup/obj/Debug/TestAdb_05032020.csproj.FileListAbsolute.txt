@@ -89,12 +89,6 @@ C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestA
 C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.Form1.resources
 C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.Properties.Resources.resources
 C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.Yardım.resources
-C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.YedekAlEski.resources
-C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.YedekAlUserEski.resources
-C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.YedekAlUserYeni.resources
-C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.YedekAlYeni.resources
-C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.YedekYukleEski.resources
-C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.YedekYukleYeni.resources
 C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.csproj.GenerateResource.cache
 C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.exe.licenses
 C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.csproj.CopyComplete
@@ -141,3 +135,8 @@ C:\Users\test\Desktop\TkBackup\Source\TkBackup\bin\Debug\TestAdb_05032020.exe.ma
 C:\Users\test\Desktop\TkBackup\Source\TkBackup\bin\Debug\TestAdb_05032020.application
 C:\Users\test\Desktop\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.exe.manifest
 C:\Users\test\Desktop\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.application
+C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\bin\Debug\TestAdb_05032020.exe.manifest
+C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\bin\Debug\TestAdb_05032020.application
+C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.exe.manifest
+C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.application
+C:\Users\yakupcontarli\Documents\GitHub\TkBackup\Source\TkBackup\obj\Debug\TestAdb_05032020.Loading.resources

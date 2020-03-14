@@ -101,41 +101,11 @@
     <Compile Include="Yardım.Designer.cs">
       <DependentUpon>Yardım.cs</DependentUpon>
     </Compile>
-    <Compile Include="YedekAlEski.cs">
+    <Compile Include="Loading.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="YedekAlEski.Designer.cs">
-      <DependentUpon>YedekAlEski.cs</DependentUpon>
-    </Compile>
-    <Compile Include="YedekAlUserEski.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="YedekAlUserEski.Designer.cs">
-      <DependentUpon>YedekAlUserEski.cs</DependentUpon>
-    </Compile>
-    <Compile Include="YedekAlUserYeni.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="YedekAlUserYeni.Designer.cs">
-      <DependentUpon>YedekAlUserYeni.cs</DependentUpon>
-    </Compile>
-    <Compile Include="YedekAlYeni.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="YedekAlYeni.Designer.cs">
-      <DependentUpon>YedekAlYeni.cs</DependentUpon>
-    </Compile>
-    <Compile Include="YedekYukleEski.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="YedekYukleEski.Designer.cs">
-      <DependentUpon>YedekYukleEski.cs</DependentUpon>
-    </Compile>
-    <Compile Include="YedekYukleYeni.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="YedekYukleYeni.Designer.cs">
-      <DependentUpon>YedekYukleYeni.cs</DependentUpon>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -153,23 +123,8 @@
     <EmbeddedResource Include="Yardım.resx">
       <DependentUpon>Yardım.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="YedekAlEski.resx">
-      <DependentUpon>YedekAlEski.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="YedekAlUserEski.resx">
-      <DependentUpon>YedekAlUserEski.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="YedekAlUserYeni.resx">
-      <DependentUpon>YedekAlUserYeni.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="YedekAlYeni.resx">
-      <DependentUpon>YedekAlYeni.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="YedekYukleEski.resx">
-      <DependentUpon>YedekYukleEski.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="YedekYukleYeni.resx">
-      <DependentUpon>YedekYukleYeni.cs</DependentUpon>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>

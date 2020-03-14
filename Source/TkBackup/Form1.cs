@@ -20,13 +20,14 @@ namespace TestAdb_05032020
         {
             InitializeComponent();
             label1.Text = "İş bu uygulama test aşamasında olup veri kayıplarından uygulama yapımcısı sorumlu değildir. \n Bazı telefon marka üreticileri tarafından Rehber kişileri,SMS Mesajların yedeklenmesi güvenlik gerekçesiyle engellenir.\n WhatsApp uygulama ve yedekleri güvenlik gerekçesiyle Facebook Inc. tarafından engellenmektedir.";
-
+            
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
           
-            YedekAlYeni YedekAlY = new YedekAlYeni();
+            Loading YedekAlY = new Loading();
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -39,22 +40,8 @@ namespace TestAdb_05032020
             {
                 YedekAlY.Show();
             }
-
-            foreach (Process p in Process.GetProcesses())
-            {
-                if (p.ProcessName == "adb")
-                {
-
-                    
-                }
-                else
-                {
-                    YedekAlY.Close();
-                    break;
-                }
-                
-
-            }
+            process.WaitForExit();
+            YedekAlY.Close();
         }
 
 
@@ -62,9 +49,9 @@ namespace TestAdb_05032020
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            
-            YedekYukleYeni YedekYukleY = new YedekYukleYeni();
+
+
+            Loading YedekYukleY = new Loading();
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -77,22 +64,12 @@ namespace TestAdb_05032020
             {
                 YedekYukleY.Show();
             }
-
-            foreach (Process p in Process.GetProcesses())
+            if (process.Start() == true)
             {
-                if (p.ProcessName == "adb")
-                {
-
-
-                }
-                else
-                {
-                    YedekYukleY.Close();
-                    break;
-                }
-
-
+                YedekYukleY.Show();
             }
+            process.WaitForExit();
+            YedekYukleY.Close();
 
 
 
@@ -110,9 +87,9 @@ namespace TestAdb_05032020
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
-            
-            YedekAlUserYeni YedekAlUY = new YedekAlUserYeni();
+
+
+            Loading YedekAlUY = new Loading();
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -126,27 +103,18 @@ namespace TestAdb_05032020
                 YedekAlUY.Show();
             }
 
-            foreach (Process p in Process.GetProcesses())
+            if (process.Start() == true)
             {
-                if (p.ProcessName == "adb")
-                {
-
-
-                }
-                else
-                {
-                    YedekAlUY.Close();
-                    break;
-                }
-
-
+                YedekAlUY.Show();
             }
+            process.WaitForExit();
+            YedekAlUY.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-           
-            YedekAlEski YedekAlE = new YedekAlEski();
+
+            Loading YedekAlE = new Loading();
 
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
@@ -161,27 +129,18 @@ namespace TestAdb_05032020
                 YedekAlE.Show();
             }
 
-            foreach (Process p in Process.GetProcesses())
+            if (process.Start() == true)
             {
-                if (p.ProcessName == "adb")
-                {
-
-
-                }
-                else
-                {
-                    YedekAlE.Close();
-                    break;
-                }
-
-
+                YedekAlE.Show();
             }
+            process.WaitForExit();
+            YedekAlE.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-           
-            YedekAlUserEski YedekAlUE = new YedekAlUserEski();
+
+            Loading YedekAlUE = new Loading();
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -195,27 +154,18 @@ namespace TestAdb_05032020
                 YedekAlUE.Show();
             }
 
-            foreach (Process p in Process.GetProcesses())
+            if (process.Start() == true)
             {
-                if (p.ProcessName == "adb")
-                {
-
-
-                }
-                else
-                {
-                    YedekAlUE.Close();
-                    break;
-                }
-
-
+                YedekAlUE.Show();
             }
+            process.WaitForExit();
+            YedekAlUE.Close();
 
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            YedekYukleEski YedekYukleE = new YedekYukleEski();
+            Loading YedekYukleE = new Loading();
             YedekYukleE.Show();
             System.Diagnostics.Process process = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
@@ -230,27 +180,35 @@ namespace TestAdb_05032020
                 YedekYukleE.Show();
             }
 
-            foreach (Process p in Process.GetProcesses())
+            if (process.Start() == true)
             {
-                if (p.ProcessName == "adb")
-                {
-
-
-                }
-                else
-                {
-                    YedekYukleE.Close();
-                    break;
-                }
-
-
+                YedekYukleE.Show();
             }
-
+            process.WaitForExit();
+            YedekYukleE.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
            
+        }
+        private void Form1_Close(object sender, FormClosedEventArgs e)
+        {
+            string strCmdText;
+            strCmdText = "/C adbKill.bat";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+        }
+        private void Form1_Closed(object sender, FormClosedEventArgs e)
+        {
+            string strCmdText;
+            strCmdText = "/C adbKill.bat";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+        }
+        private void Form1_Closing(object sender, FormClosingEventArgs e)
+        {
+            string strCmdText;
+            strCmdText = "/C adbKill.bat";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
         }
     }
 }

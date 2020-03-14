@@ -102,14 +102,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestAdb_05032020.exe" size="265720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestAdb_05032020.exe" size="144888">
       <assemblyIdentity name="TestAdb_05032020" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lvrG3I/jDRgWpuLdS35W68gzXYWXpekaZy1wv7Y/OwM=</dsig:DigestValue>
+        <dsig:DigestValue>G+i2Nslsx/p7whm0IG87ziazgPFiEngpCnnMPS2/XU0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
